@@ -1,4 +1,4 @@
-{ pkgs }: {
+{ pkgs, coreutils ? pkgs.coreutils }: {
   name = "date";
-  config.EntryPoint = [ "${pkgs.coreutils}/bin/date" ];
+  config.EntryPoint = [ "${coreutils}/bin/date" ];
 }
